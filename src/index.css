@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -54,8 +55,12 @@ code {
   }
 }
 .App {
-  max-width: 100%; 
+  
   margin: 0 auto; 
+  max-width: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -105,9 +110,9 @@ code {
 }
 #tela-formulario{
   padding-top: 5%;
-  background-image: url('./background2.png');
   background-size: cover;
-  color: #F8F4ED;
+  background-color: #F8F4ED;
+  height: 200vh;
 }
 
 
@@ -129,13 +134,14 @@ code {
   text-align: left;
   padding-left: 40px;
   padding-top: 35px;
+  position:relative;
 }
 
 #titulo-formulario{
   color: #1F5923;
-  font-size: 63px;
+  font-size: 60px;
   color: #F8F4ED;
-  padding-top: 55px;;
+  padding-top: 35px;;
 }
 
 /* Textos */
@@ -165,11 +171,12 @@ code {
 
 }
 #texto-formulario{
-  font-size: 30px;
-  color: #1F5923;
+  font-size: 22px;
   color: #F8F4ED;
   text-align: center;
-  margin: 40px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 h1 {
@@ -205,11 +212,11 @@ h1 {
 #tela3-box{
   background-color: #1F5923;
   border-radius: 20px;
-  width: 80%;
+  width: 100vh;
   max-width: 600px;
-  height: 75vh;
+  height: 40vh;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   padding-bottom: 10vh;
   box-sizing: border-box;
@@ -219,10 +226,69 @@ h1 {
   align-items: center; 
 }
 
-#form-btn {
+#tela3-box-forms {
   background-color: #B1F9B1; 
+  border-radius: 20px;
+  width: 100vh;
+  max-width: 600px;
+  height: 130vh;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  padding-bottom: 30vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+#tela3-box-forms form {
+  width: 100%;
+  max-width: 400px; 
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 200px;
+  font-family: sans-serif; 
+  color: #3D3D3D;
+}
+
+
+
+#tela3-box-forms form label {
+  display: block;
+  margin-bottom: 10px;
+}
+#tela3-box-forms form input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#tela3-box-forms form input[type="number"]{
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#tela3-box-forms form select {
+  width: 35%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#objetivos {
+  margin-bottom: 25px;
+}
+#form-btn {
+  background-color: #1F5923; 
   border: none;
-  color: #1F5923;
+  color: #B1F9B1;
   padding: 15px 32px; 
   text-align: center;
   text-decoration: none;
@@ -230,17 +296,11 @@ h1 {
   font-size: 16px;
   border-radius: 20px; 
   cursor: pointer;
-  margin: 0 auto; 
-  display: flex;
+  margin-top: 50px;
+  
 }
 
 #form-btn:hover {
-  background-color: #B1F9B1;
+  background-color: #163f18;
 }
 
-
-/* FORMS */
-
-.forms{
-  background-color: #B1F9B1;
-}
